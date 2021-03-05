@@ -1,0 +1,27 @@
+.main-div__users{
+    width: 20em;
+    max-width: 90%;
+    margin: auto;
+}
+
+.main-div__heading{
+    width: max-content;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main-div__user-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-div__user{
+    font-size: 1.3em;
+    padding: 2px;
+}
+
+.main-div__user:hover{
+    color: red;
+    cursor: default;
+}
