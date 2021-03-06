@@ -1,0 +1,26 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/view.css">
+</head>
+<%- include('includes/nav.ejs') %>
+    <main>
+        <% if(users.length > 0) { %>
+        <div class="main-div__users">
+            <div class="main-div__heading">
+                <p>All the users are displayed below</p>
+            </div>
+            <div>
+                <ul class="main-div__user-list">
+                    <% for (let items of users) { %>
+                        <li class="main-div__user"><%= items %></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        <% } else { %>
+            <div class="main-div__users">
+                <p class="main-div__heading">No users Found...</p>
+            </div>
+        <% } %>
+    </main>
+</body>
+</html>
